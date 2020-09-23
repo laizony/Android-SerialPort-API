@@ -26,7 +26,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.security.InvalidParameterException;
-
+//基类
 public abstract class SerialPortActivity extends Activity {
 
     protected Application mApplication;
@@ -43,7 +43,7 @@ public abstract class SerialPortActivity extends Activity {
             while (!isInterrupted()) {
                 int size;
                 try {
-                    byte[] buffer = new byte[64];
+                    byte[] buffer = new byte[128];
                     if (mInputStream == null) return;
                     size = mInputStream.read(buffer);
                     if (size > 0) {

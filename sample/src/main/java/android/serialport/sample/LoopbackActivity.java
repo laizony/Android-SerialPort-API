@@ -20,7 +20,7 @@ import java.io.IOException;
 
 import android.os.Bundle;
 import android.widget.TextView;
-
+//发送接收
 public class LoopbackActivity extends SerialPortActivity {
 
     byte mValueToSend;

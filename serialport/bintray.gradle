@@ -7,7 +7,7 @@
 
 // 执行 ./gradlew clean bintrayUpload
 
-def toUpload = true // 配置是否上传
+def toUpload = false // 配置是否上传
 if (toUpload) {
     apply plugin: 'com.github.dcendents.android-maven'
     apply plugin: 'com.jfrog.bintray'
